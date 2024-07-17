@@ -26,7 +26,7 @@
     @apply uppercase;
     @apply text-white;
     @apply text-3xl;
-    font-weight: 800;
+    font-weight: 900;
   }
 
   form {

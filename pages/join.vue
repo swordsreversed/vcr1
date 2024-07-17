@@ -1,5 +1,12 @@
+<script setup>
+import Footer from './componenets/Footer.vue'
+</script>
+
 <template>
   <div class="text-center mx-6 grid grid-cols-1 gap-2 md:grid-cols-2 md:mt-12">
+  <div class="w-2/5 mx-auto mt-6">
+    <img src="/logos.png" />
+  </div>
     <div>
       <h1 class="pt-6 px-8">
         <span class="text-porange">Celebrating 1 Year</span> of Victoria's
@@ -72,8 +79,8 @@
         <div class="mt-2"><button class="btn btn-pblue">submit</button></div>
       </Form>
     </div>
-    <NuxtLink to="/"> Home </NuxtLink>
   </div>
+<Footer/>
 </template>
 
 <script>
