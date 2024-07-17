@@ -17,6 +17,7 @@
 
 @layer base {
   body {
+    @apply h-full w-full bg-pblue;
     font-family: 'Asap Condensed';
     font-weight: 800;
   }
