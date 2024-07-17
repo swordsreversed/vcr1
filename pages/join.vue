@@ -4,23 +4,23 @@
 
 <template>
   <div class="text-center mx-6 grid grid-cols-1 gap-2 md:grid-cols-2 md:mt-12">
-  <div class="w-2/5 mx-auto mt-6">
-    <img src="/logos.png" />
-  </div>
     <div>
-      <h1 class="pt-6 px-8">
+      <div class="w-2/5 mx-auto md:mx-0 mt-5">
+        <img src="/logos.png" />
+      </div>
+      <h1 class="pt-6 px-8 md:px-0 md:text-left">
         <span class="text-porange">Celebrating 1 Year</span> of Victoria's
         Container Deposit Scheme
       </h1>
-      <p class="reading my-2 px-8 text-white text-xs leading-5">
+      <p class="reading my-2 px-8 md:px-0 text-white text-xs leading-5 md:text-left md:my-8">
       Tell us why you care for our planet and have your message displayed from November 2024 and through the summer school holidays at Scienceworks.
       </p>
-      <div class="flex">
-        <div class="m-auto pb-6">
-          <button class="btn bg-pmint">Sign up for newsletter</button>
+
+        <div class="md:text-left pb-6">
+          <button class=" btn bg-pmint">Sign up for newsletter</button>
           <button class="btn bg-white">Learn more about</button>
         </div>
-      </div>
+
     </div>
     <div class="bg-white rounded-xl p-8 grid grid-cols-1">
       <Form @submit="onSubmit" class="uppercase">
