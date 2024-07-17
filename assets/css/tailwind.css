@@ -25,14 +25,19 @@
     @apply uppercase;
     @apply text-white;
     @apply text-3xl;
+    font-weight: 800;
   }
 
   form {
     @apply text-pblue;
   }
 
-  textarea,
-input[type] {
+  textarea, input[type] {
     @apply bg-grey;
   }
+
+  .reading {
+    font-family: 'Source Sans 3';
+  }
+
 }
