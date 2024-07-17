@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+
+.btn {
+  @apply text-pblue py-2 my-2 px-4 rounded-md uppercase w-3/5;
+}
+
+.btn-mint {
+  @apply bg-pmint;
+}
+
+.btn-pblue {
+  @apply bg-pblue text-white;
+}
+
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Asap Condensed';
+    font-weight: 800;
+  }
+
+  h1 {
+    @apply uppercase;
+    @apply text-white;
+    @apply text-3xl;
+  }
+
+  form {
+    @apply text-pblue;
+  }
+
+  textarea,
+input[type] {
+    @apply bg-grey;
+  }
+}
