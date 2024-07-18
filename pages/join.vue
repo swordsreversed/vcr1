@@ -1,7 +1,6 @@
 <script setup>
 import { ref } from 'vue'
 import { Form, Field, ErrorMessage } from 'vee-validate';
-const { data } = await useFetch('/api/hello')
 
 const showVis = ref(false);
 
@@ -33,7 +32,6 @@ async function onSubmit(values) {
 <template>
   <div class="text-center mx-6 grid grid-cols-1 gap-2 md:grid-cols-2 md:mt-12">
     <div>
-      <pre>{{ data.hello }}</pre>
       <div class="w-2/5 mx-auto md:mx-0 mt-5">
         <img src="/logos.png" />
       </div>
