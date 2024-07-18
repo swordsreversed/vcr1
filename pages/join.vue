@@ -2,12 +2,12 @@
 import { ref } from 'vue'
 import { Form, Field, ErrorMessage } from 'vee-validate';
 
-const showVis = ref(false);
+const { data: user } = await useFetch('/api/test')
+
+const submitted = ref(false);
 
 function onSubmitX(values) {
   console.log(JSON.stringify(values, null, 2));
-  showVis.value = true;
-  console.log(showVis.value);
 }
 
 function validateEmail(value) {
@@ -21,6 +21,7 @@ function validateEmail(value) {
 }
 
 async function onSubmit(values) {
+  submitted.value = true;
   const { body } = await $fetch('/api/store', {
     method: 'post',
     body: { data: values }
@@ -35,6 +36,9 @@ async function onSubmit(values) {
       <div class="w-2/5 mx-auto md:mx-0 mt-5">
         <img src="/logos.png" />
       </div>
+
+       <p class="text-white">user: {{ user.user.email }}</p>
+
       <h1 class="pt-6 px-8 md:px-0 md:text-left">
         <span class="text-porange">Celebrating 1 Year</span> of Victoria's
         Container Deposit Scheme
@@ -50,9 +54,11 @@ async function onSubmit(values) {
       </div>
 
     </div>
-    <div class="text-white" v-show="showVis">fofofofofof</div>
     <div class="bg-white rounded-xl p-8 grid grid-cols-1">
-      <Form @submit="onSubmit" class="uppercase">
+      
+	<div v-show="submitted">for submitted</div>
+	<div v-show="!submitted">
+	<Form @submit="onSubmit" class="uppercase">
         <div class="grid grid-cols-2 my-3 gap-2">
           <div class="text-left">
             <label for="fname" class="text-sm block">First Name &ast;</label>
@@ -80,6 +86,7 @@ async function onSubmit(values) {
         </div>
         <div class="mt-2"><button class="btn btn-pblue">submit</button></div>
       </Form>
+	</div>
     </div>
   </div>
   <Footer />
