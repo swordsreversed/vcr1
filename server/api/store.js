@@ -11,18 +11,21 @@ export default defineEventHandler(async (event) => {
   // Get the completed value from the request body and update progress in DB
   // Select based on the chapter and lesson slugs
   // const { school_name, fname } = await readBody(event);
- const body = await readBody(event) 
-console.log(body.data.fname);
+  const body = await readBody(event) 
 
-  const user = await prisma.user.create({
+
+  const message = await prisma.message.create({
     data: {
-      email: body.data.school_name,
-      name: body.data.fname,
+      school: body.data.school,
+      name: body.data.name,
+      year: body.data.year,
+      teacher: body.data.teacher,
+      message: body.data.message
     },
   })
 
   return {
-    user: user
+    message: message
   }
 });
 

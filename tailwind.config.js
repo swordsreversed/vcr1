@@ -26,7 +26,9 @@ export default {
       pblue: '#052E5E',
       white: '#FFFFFF',
       pmint: '#BDE8C9',
+      porange: '#FF8200',
       grey: '#eee',
+      dblue: '#0a2245'
     },
     borderColor: {
       pblue: '#052E5E',

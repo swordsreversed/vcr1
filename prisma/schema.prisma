@@ -25,3 +25,14 @@ model Post {
   author    User    @relation(fields: [authorId], references: [id])
   authorId  Int
 }
+
+model Message {
+  id        Int     @id @default(autoincrement())
+  school     String
+  name   String
+  year   String
+  teacher String
+  message String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}

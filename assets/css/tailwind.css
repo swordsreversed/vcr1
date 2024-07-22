@@ -20,13 +20,26 @@
     @apply h-full w-full bg-pblue;
     font-family: 'Asap Condensed';
     font-weight: 800;
+    background-image: url("/VicReturns-Desktop.jpg");
   }
 
   h1 {
     @apply uppercase;
     @apply text-white;
+    font-size: 2.7rem;
+    font-weight: bolder;
+    line-height: 2.9rem;
+  }
+
+  h2 {
     @apply text-3xl;
     font-weight: 900;
+  }
+
+  .large-head {
+  	font-size: 2.7rem;
+	font-weight: 900;
+	line-height: 2.9rem;
   }
 
   form {

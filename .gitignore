@@ -7,3 +7,4 @@ node_modules
 .data
 .env
 dist
+__sublime_sftp_offset
