@@ -10,7 +10,7 @@ function onSubmitX(values) {
   console.log(JSON.stringify(values, null, 2));
 }
 
-function validateEmail(value) {
+function validateForm(value) {
   // if the field is empty
   if (!value) {
     return 'You missed something here*';
@@ -32,12 +32,10 @@ async function onSubmit(values) {
 
 <template>
   <div class="text-center mx-6 grid grid-cols-1 gap-2 md:grid-cols-2 mb-8 md:mt-12">
-    <div class=" md:my-8 md:w-2/3">
-      <div class="mx-auto md:mx-0 mt-5">
+    <div class="mb-8 md:w-2/3">
+      <div class="mx-auto md:mx-0 mt-5 md:w-2/3">
         <img src="/logos.svg" />
       </div>
-
-      <p class="text-white">{{ data.message.name }}</p> 
 
       <h1 class="pt-7 px-8 md:px-0 md:text-left large-head">
         <span class="text-porange">Celebrating 1 Year</span> of Victoria's
@@ -68,31 +66,33 @@ async function onSubmit(values) {
   </div>
   </div>
 	<div v-show="!submitted">
-	<Form @submit="onSubmit" class="uppercase">
+	<Form @submit="onSubmit" class="uppercase" v-slot="{ errors }">
         <div class="grid grid-cols-2 my-3 gap-2">
           <div class="text-left">
             <label for="name" class="text-sm block">First Name &ast;</label>
-            <Field name="name" type="text" :rules="validateEmail" class="rounded p-1 w-full" />
+            <Field name="name" type="text" :rules="validateForm" class="rounded p-1 w-full" />
           </div>
           <div class="text-left">
             <label class="text-sm block" for="year">Year Level &ast;</label>
-            <Field name="year" type="text" class="rounded p-1 w-full" />
+            <Field name="year" type="text" :rules="validateForm" class="rounded p-1 w-full" />
           </div>
         </div>
         <div class="my-3">
           <label class="text-left text-sm block" for="school">School Name &ast;</label>
-          <Field type="text" name="school" id="school" class="w-full rounded" />
+          <Field type="text" name="school" :rules="validateForm" id="school" class="w-full rounded" />
         </div>
         <div class="my-3">
           <label class="text-left text-sm block" for="teacher">Teacher Name &ast;</label>
-          <Field type="text" name="teacher" id="teacher" class="w-full rounded" />
+          <Field type="text" name="teacher" :rules="validateForm" id="teacher" class="w-full rounded" />
         </div>
         <div class="mt-3">
           <label class="text-left text-sm block" for="message">Why is it important to recycle? &ast;</label>
-          <Field as="textarea" name="message" id="message" rows="8" class="w-full rounded" />
+          <Field as="textarea" name="message" :rules="validateForm" id="message" rows="8" class="w-full rounded" />
         </div>
         <div class="text-left">
-          <ErrorMessage class="text-xs text-pred normal-case" name="fname" />
+		    <template v-if="Object.keys(errors).length">
+			    <div class="text-xs text-pred normal-case"> {{ Object.values(errors)[0] }}</div>
+  </template>
         </div>
         <div class="mt-2"><button class="btn btn-pblue">submit</button></div>
       </Form>
