@@ -20,7 +20,10 @@ export default {
       pmint: '#BDE8C9',
       white: '#FFFFFF',
       sblue: '#004C97',
-      pred: 'red'
+      pred: '#b13841',
+	plightblue: '#e2ebf5',
+	    tblue: '#1d3655',
+      grey: 'grey',
     },
     backgroundColor: {
       pblue: '#052E5E',
@@ -28,13 +31,15 @@ export default {
       pmint: '#BDE8C9',
       porange: '#FF8200',
       grey: '#eee',
-      dblue: '#0a2245'
+      dblue: '#0a2245',
+	plightblue: '#e2ebf5'
     },
     borderColor: {
       pblue: '#052E5E',
       white: '#FFFFFF',
       pmint: '#BDE8C9',
-      sblue: '#004C97'
+      sblue: '#004C97',
+      grey: '#eee',
     },
     extend: {},
   },
