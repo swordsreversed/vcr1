@@ -61,10 +61,10 @@ async function onSubmit(values) {
 </script>
 
 <template>
-	<div class="flex flex-[1_0_auto]">	
+	<div class="">	
   <div class="text-center mx-auto grid grid-cols-1 gap-2 md:grid-cols-2 mb-8 md:mt-12">
     <div class="mx-auto mb-8 md:w-4/5">
-      <div class="mx-auto md:mx-0 mt-5 md:w-1/2">
+      <div class="mx-8 md:mx-0 mt-5 w-2/5 md:w-1/2">
         <img src="/logos.svg" />
       </div>
 	<div class="mx-8 md:mx-0">
@@ -77,7 +77,7 @@ async function onSubmit(values) {
       <p class="leading-relaxed text-xs reading md:text-left border-b border-solid border-plightblue text-plightblue pb-3 mb-3">If you are a primary school student in Victoria, you have the chance to be part of the exhibition. Have your message included in a bottle for all visitors at Scienceworks to see by completing the form.</p>
       <h2 class="text-lg mt-5 mb-2  md:px-0 text-white text-sm md:text-left leading-6">Are you a teacher or educator?</h2>
       <p class="text-xs leading-relaxed reading md:text-left text-plightblue mb-3">
-      We've created handy classroom activities and lesson plans so your students can learn about recycling and partake in our Message in a Bottle installation,
+      We've created handy classroom activities and lesson plans so your students can learn about recycling and partake in our Message in a Bottle installation.
       </p>
       <div class="md:text-left md:w-4/5">
         <button class=" btn bg-pmint">Sign up for newsletter</button>
@@ -114,7 +114,7 @@ async function onSubmit(values) {
         </div>
         <div class="my-3">
           <label class="text-left text-sm block" for="school">School Name &ast;</label>
-          <Field type="text" name="school" :rules="validateForm" id="school" class="w-full rounded" />
+          <Field type="text" name="school" :rules="validateForm" id="school" class="w-full rounded p-1" />
         </div>
         <!-- <div class="my-3">
           <label class="text-left text-sm block" for="teacher">Teacher Name &ast;</label>
