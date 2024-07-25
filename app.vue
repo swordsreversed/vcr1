@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="h-full container text-center mx-auto">
+  <div id="app" class="flex flex-col  h-full container text-center mx-auto">
     <NuxtPage />
   </div>
     <Footer/>

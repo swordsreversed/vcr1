@@ -6,7 +6,6 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
     '@nuxtjs/tailwindcss',
     '@vee-validate/nuxt',
-    '@tailwindcss/forms',
     "@prisma/nuxt"
   ],
   tailwindcss: {
@@ -24,4 +23,11 @@ export default defineNuxtConfig({
       'Asap+Condensed': true
     },
   },
+  vite: {
+  resolve: {
+     alias: {
+       ".prisma/client/index-browser": "./node_modules/.prisma/client/index-browser.js"
+    }
+  }
+}
 });

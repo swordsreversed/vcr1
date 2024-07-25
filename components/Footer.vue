@@ -3,7 +3,7 @@
 </script>
 
 <template>
-<div class="bg-dblue reading text-white text-xs p-4">
+<div class="shrink-0 bg-dblue reading text-white text-xs p-4">
     <div class="flex leading-6 flex-col items-center justify-center mt-8">
 	    <div class="border-dashed border-white border-b text-center pb-4">
 	    <p>We acknowledge the Traditional Csutodians upon the land upon which we live and work, and pay our respects, to their Elders past present and emerging.</p>
