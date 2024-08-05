@@ -28,7 +28,7 @@ function validateForm(value) {
 
 function validateWords(value) {
 
-const regex = /^(?:\b\w+\b[\s\r\n\.\,\?\!]*){0,15}$/i;
+const regex = /^(?:\b\w+\b[\s\r\n\.\,\?\!]*){0,20}$/i;
       let ct = 0;
       if (value) {
       	ct = value.trim().split(/\s+/).length;
@@ -63,25 +63,30 @@ async function onSubmit(values) {
 <template>
 	<div class="">	
   <div class="text-center mx-auto grid grid-cols-1 gap-2 md:grid-cols-2 mb-8 md:mt-12">
-    <div class="mx-auto mb-8 md:w-4/5">
+    <div class="mx-auto mx-6 md:w-4/5 mt-8 xl:mt-14">
       <div class="mx-8 md:mx-0 mt-5 w-2/5 md:w-1/2">
-        <img src="/logos.svg" />
+	     <div class="mt-2 flex align-items">
+	     	<img class="mr-4" src="/logos.svg" /> 
+		<img src="/MessageInABottle_CampaignLogo.png" />
+	     </div>
       </div>
 	<div class="mx-8 md:mx-0">
-      <h1 class="pt-7 md:px-0 md:text-left large-head">
+      <h1 class="pt-7 md:pt-4 md:px-0 md:text-left large-head">
         <span class="text-porange">Share your message</span> in a bottle
       </h1>
       <h2 class="mt-5 mb-2 md:px-0 text-white md:text-left leading-7">
       CDS Vic is turning one and celebrating with a 'Message in a Bottle' exhibition that showcases the lifecycle of a plastic bottle and the importance of recycling.
       </h2>
-      <p class="leading-relaxed text-xs reading md:text-left border-b border-solid border-plightblue text-plightblue pb-3 mb-3">If you are a primary school student in Victoria, you have the chance to be part of the exhibition. Have your message included in a bottle for all visitors at Scienceworks to see by completing the form.</p>
+      <p class="leading-relaxed text-xs reading md:text-left border-b border-solid border-plightblue text-plightblue pb-3 mb-3">
+      If you are a primary school student in Victoria, you can be part of the installation. By submitting the form, you have the chance to have your message included in a bottle for visitors at Scienceworks to see during the exhibition from 1 November 2024 to 27 January 2025. 
+      </p>
       <h2 class="text-lg mt-5 mb-2  md:px-0 text-white text-sm md:text-left leading-6">Are you a teacher or educator?</h2>
       <p class="text-xs leading-relaxed reading md:text-left text-plightblue mb-3">
       We've created handy classroom activities and lesson plans so your students can learn about recycling and partake in our Message in a Bottle installation.
       </p>
       <div class="md:text-left md:w-4/5">
-	      <button class="btn bg-pmint"><a href="">Classroom lesson plans</a></button>
-	      <button class="btn bg-white"><a href="">Student activity worksheets</a></button>
+	      <button class="btn bg-pmint"><a href="/Lesson_Plans.pdf">Classroom lesson plans</a></button>
+	      <button class="btn bg-white"><a href="/Activity_worksheets.pdf">Student activity worksheets</a></button>
       </div>
 	</div>
     </div>
@@ -130,7 +135,7 @@ async function onSubmit(values) {
 			    <div class="text-xs text-pred normal-case"> {{ Object.values(errors)[0] }}</div>
   </template>
         </div>
-	<div class="text-xs text-grey normal-case text-right"><span id="ct">0</span>/15</div>
+	<div class="text-xs text-grey normal-case text-right"><span id="ct">0</span>/20</div>
 	</div>
 	<div class="terms my-3 text-xs text-tblue normal-case">CDS Vic is collecting this information for the Message in a Bottle exhibition. This information will be managed under CDS Vic's <a href="" target="_blank">Privacy Policy</a> and <a href="" target="_blank">Terms and Conditions</a>. For further info contact <a href="mailto:info@vicreturn.com.au">info@vicreturn.com.au</a>.</div>
 	<div class="mt3">

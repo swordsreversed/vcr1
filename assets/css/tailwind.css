@@ -16,11 +16,12 @@
     height: 100%;
   }
 
-  #app {
+.container {
+	height: 810px;
 background-repeat: no-repeat;
     background-image: url("/VicReturns-Desktop.jpg");
+//background-size: 100% auto;
 }
-
   h1 {
     @apply uppercase;
     @apply text-white;
