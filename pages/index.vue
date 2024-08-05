@@ -72,7 +72,7 @@ async function onSubmit(values) {
         <span class="text-porange">Share your message</span> in a bottle
       </h1>
       <h2 class="mt-5 mb-2 md:px-0 text-white md:text-left leading-7">
-      	We are turning one and celebrating with a Message in a Bottle exhibition that will arrive at Scienceworks from 1 November until the end of summer school holidays. It showcases the lifecycle of a plastic bottle and why it's important that we all contribute to a circular economy.
+      CDS Vic is turning one and celebrating with a 'Message in a Bottle' exhibition that showcases the lifecycle of a plastic bottle and the importance of recycling.
       </h2>
       <p class="leading-relaxed text-xs reading md:text-left border-b border-solid border-plightblue text-plightblue pb-3 mb-3">If you are a primary school student in Victoria, you have the chance to be part of the exhibition. Have your message included in a bottle for all visitors at Scienceworks to see by completing the form.</p>
       <h2 class="text-lg mt-5 mb-2  md:px-0 text-white text-sm md:text-left leading-6">Are you a teacher or educator?</h2>
@@ -80,8 +80,8 @@ async function onSubmit(values) {
       We've created handy classroom activities and lesson plans so your students can learn about recycling and partake in our Message in a Bottle installation.
       </p>
       <div class="md:text-left md:w-4/5">
-        <button class=" btn bg-pmint">Sign up for newsletter</button>
-        <button class="btn bg-white">Learn more about</button>
+	      <button class="btn bg-pmint"><a href="">Classroom lesson plans</a></button>
+	      <button class="btn bg-white"><a href="">Student activity worksheets</a></button>
       </div>
 	</div>
     </div>
@@ -121,7 +121,7 @@ async function onSubmit(values) {
           <Field type="text" name="teacher" :rules="validateForm" id="teacher" class="w-full rounded" />
 	</div> -->
         <div class="my-3">
-          <label class="text-left text-sm block" for="message">Tell us in 15 words or less recycling is important to me because...&ast;</label>
+          <label class="text-left text-sm block" for="message">Tell us in 20 words or less: Why is recycling important to you? </label>
           <Field as="textarea" name="message" :rules="validateWords" id="message" rows="8" class="w-full rounded" />
         </div>
 	<div class="grid grid-cols-2 my-3 gap-2">
@@ -137,8 +137,7 @@ async function onSubmit(values) {
 	<Field v-slot="{ field }" name="terms" type="checkbox" :value="true" :rules="validateForm" :unchecked-value="false">
   <label>
     <input type="checkbox" name="terms" v-bind="field" :value="true" />
-    A teacher from the above school has supervised this submission.
-
+A parent, guardian or teacher from the above school has supervised the submission.
   </label>
 </Field>
 	</div>
