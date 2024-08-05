@@ -61,10 +61,10 @@ async function onSubmit(values) {
 </script>
 
 <template>
-	<div class="">	
-  <div class="text-center mx-auto grid grid-cols-1 gap-2 md:grid-cols-2 mb-8 md:mt-12">
-    <div class="mx-auto mx-6 md:w-4/5 mt-8 xl:mt-14">
-      <div class="mx-8 md:mx-0 mt-5 w-2/5 md:w-1/2">
+	<div>	
+  <div class="text-center mx-auto grid grid-cols-1 gap-2 md:grid-cols-2 mb-8 md:mt-20">
+    <div class="mx-auto mx-6 md:w-4/5">
+      <div class="mx-8 md:mx-0 w-2/5 md:w-1/2">
 	     <div class="mt-2 flex align-items">
 	     	<img class="mr-4" src="/logos.svg" /> 
 		<img src="/MessageInABottle_CampaignLogo.png" />
@@ -84,7 +84,7 @@ async function onSubmit(values) {
       <p class="text-xs leading-relaxed reading md:text-left text-plightblue mb-3">
       We've created handy classroom activities and lesson plans so your students can learn about recycling and partake in our Message in a Bottle installation.
       </p>
-      <div class="md:text-left md:w-4/5">
+      <div class="md:text-left md:w-3/5">
 	      <button class="btn bg-pmint"><a href="/Lesson_Plans.pdf">Classroom lesson plans</a></button>
 	      <button class="btn bg-white"><a href="/Activity_worksheets.pdf">Student activity worksheets</a></button>
       </div>

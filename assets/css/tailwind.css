@@ -17,7 +17,6 @@
   }
 
 .container {
-	height: 810px;
 background-repeat: no-repeat;
     background-image: url("/VicReturns-Desktop.jpg");
 //background-size: 100% auto;
@@ -36,7 +35,7 @@ background-repeat: no-repeat;
   }
 
 .btn {
-  @apply text-pblue py-2 my-1 md:my-2 px-4 rounded-md uppercase w-3/5;
+  @apply text-pblue py-2 my-1 md:my-2 px-4 rounded-md uppercase w-4/5;
 }
 
 .btn-mint {
