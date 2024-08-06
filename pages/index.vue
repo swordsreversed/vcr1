@@ -10,7 +10,6 @@ configure({
   validateOnModelUpdate: false,
 });
 
-const { data: data } = await useFetch('/api/test')
 const submitted = ref(false);
 
 function countWords(str) {
