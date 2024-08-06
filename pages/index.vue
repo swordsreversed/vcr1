@@ -38,7 +38,6 @@ const regex = /^(?:\b\w+\b[\s\r\n\.\,\?\!]*){0,20}$/i;
       	 document.getElementById('ct').classList.remove("text-pred");
       
       if (!regex.test(value)) {
-      console.log('long')
       	 document.getElementById('ct').classList.add("text-pred");;
         return ' ';
       }
@@ -46,7 +45,6 @@ const regex = /^(?:\b\w+\b[\s\r\n\.\,\?\!]*){0,20}$/i;
       if (!value) {
     return 'You missed something here*';
   }
-      console.log(ct);
       return true;
 }
 
@@ -64,10 +62,16 @@ async function onSubmit(values) {
 	<div>	
   <div class="text-center mx-auto grid grid-cols-1 gap-2 md:grid-cols-2 mb-8 md:mt-20">
     <div class="mx-auto mx-6 md:w-4/5">
-      <div class="mx-8 md:mx-0 w-2/5 md:w-1/2">
-	     <div class="mt-2 flex align-items">
-	     	<img class="mr-4" src="/logos.svg" /> 
+      <div class="mx-8 md:mx-0 w-2/5 md:w-full">
+	     <div class="mt-4 flex align-items">
+	     <div class="md:w-1/2 md:mr-8">
+	     	<img src="/logos.png" /> 
+	     </div>
+	     <div class="md:w-1/2">
+		     <div class="md:w-3/5 mt-2">
 		<img src="/MessageInABottle_CampaignLogo.png" />
+	     		</div>
+	     </div>
 	     </div>
       </div>
 	<div class="mx-8 md:mx-0">
@@ -137,7 +141,7 @@ async function onSubmit(values) {
         </div>
 	<div class="text-xs text-grey normal-case text-right"><span id="ct">0</span>/20</div>
 	</div>
-	<div class="terms my-3 text-xs text-tblue normal-case">CDS Vic is collecting this information for the Message in a Bottle exhibition. This information will be managed under CDS Vic's <a href="" target="_blank">Privacy Policy</a> and <a href="" target="_blank">Terms and Conditions</a>. For further info contact <a href="mailto:info@vicreturn.com.au">info@vicreturn.com.au</a>.</div>
+	<div class="terms my-3 text-xs text-tblue normal-case">CDS Vic is collecting this information for the Message in a Bottle exhibition. This information will be managed under CDS Vic's <a href="https://cdsvic.org.au/privacy-policy" target="_blank">Privacy Policy</a> and <a href="https://cdsvic.org.au/terms-and-conditions" target="_blank">Terms and Conditions</a>. For further info contact <a href="mailto:info@vicreturn.com.au">info@vicreturn.com.au</a>.</div>
 	<div class="mt3">
 	<Field v-slot="{ field }" name="terms" type="checkbox" :value="true" :rules="validateForm" :unchecked-value="false">
   <label>

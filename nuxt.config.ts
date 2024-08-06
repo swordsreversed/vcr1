@@ -20,7 +20,7 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       'Source+Sans+3': true,
-      'Asap+Condensed': true
+      'Asap+Condensed': [400, 800, 900] 
     },
   },
   vite: {
