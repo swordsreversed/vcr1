@@ -18,8 +18,8 @@
 					<img src="/CDS-Vic_Arrow_RGB.png" />
 
 				</div>
-				<div class="ml-2 flex justify-center">
-					<img class="w-1/2" src="/logos.png" />
+				<div class="w-1/6 ml-2 flex justify-center">
+					<img class="w-1/2" src="/logosb.png" />
 				</div>
 			</div>
 		</div>

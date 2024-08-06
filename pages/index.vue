@@ -73,7 +73,7 @@ async function onSubmit(values) {
             </div>
           </div>
         </div>
-        <div class="mx-8 md:mx-0">
+        <div class="mx-8 md:mx-0 mb-4">
           <h1 class="pt-7 md:pt-4 md:px-0 md:text-left large-head">
             <span class="text-porange">Share your message</span> in a bottle
           </h1>
