@@ -19,7 +19,7 @@
 
 				</div>
 				<div class="ml-2 flex justify-center">
-					<img class="w-1/2" src="/logos.svg" />
+					<img class="w-1/2" src="/logos.png" />
 				</div>
 			</div>
 		</div>
