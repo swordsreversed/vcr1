@@ -19,7 +19,9 @@
 
 				</div>
 				<div class="w-1/6 ml-2 flex justify-center">
-					<img class="w-1/2" src="/logosb.png" />
+					<a href="https://cdsvic.org.au/">
+						<img class="w-1/2" src="/logosb.png" />
+					</a>
 				</div>
 			</div>
 		</div>

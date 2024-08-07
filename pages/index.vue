@@ -69,8 +69,10 @@ async function onSubmit(values) {
         <div class="mx-8 md:mx-0 w-2/5 md:w-full">
           <div class="mt-4 flex align-items">
             <div class="md:w-1/2 md:mr-8">
-              <img src="/logos.png" />
-            </div>
+		    <a href="https://cdsvic.org.au/">
+			    <img src="/logos.png" />
+		    </a>
+	    </div>
             <div class="md:w-1/2">
               <div class="md:w-3/5 mt-2">
                 <img src="/CDS-VIC-MessageInABottle-Logo-RGB-version.png" />
