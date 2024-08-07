@@ -3,6 +3,11 @@ import { ref } from 'vue'
 import { Form, Field, ErrorMessage } from 'vee-validate';
 import { configure } from 'vee-validate';
 
+useHead({
+  title: 'Share Your Message in a Bottle',
+
+});
+
 configure({
   validateOnBlur: false,
   validateOnChange: false,
@@ -68,7 +73,7 @@ async function onSubmit(values) {
             </div>
             <div class="md:w-1/2">
               <div class="md:w-3/5 mt-2">
-                <img src="/MessageInABottle_CampaignLogo.png" />
+                <img src="/CDS-VIC-MessageInABottle-Logo-RGB-version.png" />
               </div>
             </div>
           </div>
