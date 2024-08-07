@@ -16,9 +16,10 @@
     height: 100%;
   }
 
-  .container {
+  #app {
     background-repeat: no-repeat;
-    background-image: url("/VicReturns-Desktop.jpg");
+    background-image: url("/VicReturns-Desktop-NEW.jpg");
+	background-size: contain;
   }
 
   h1 {
