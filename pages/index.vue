@@ -66,15 +66,15 @@ async function onSubmit(values) {
   <div>
     <div class="text-center mx-auto grid grid-cols-1 gap-2 md:grid-cols-2 mb-8 md:mt-20">
       <div class="mx-auto mx-6 md:w-4/5">
-        <div class="mx-8 md:mx-0 w-2/5 md:w-full">
-          <div class="mt-4 flex align-items">
-            <div class="md:w-1/2 md:mr-8">
+        <div class="mx-8 md:mx-0 md:w-full">
+          <div class="mt-4 flex items-center">
+            <div class="md:w-1/2 mr-8">
 		    <a href="https://cdsvic.org.au/">
 			    <img src="/logos.png" />
 		    </a>
 	    </div>
             <div class="md:w-1/2">
-              <div class="md:w-3/5 mt-2">
+              <div class="md:w-3/5 ">
                 <img src="/CDS-VIC-MessageInABottle-Logo-RGB-version.png" />
               </div>
             </div>
@@ -101,8 +101,8 @@ async function onSubmit(values) {
             partake in our Message in a Bottle installation.
           </p>
           <div class="md:text-left md:w-3/5">
-            <button class="btn bg-pmint"><a href="/Lesson_Plans.pdf">Classroom lesson plans</a></button>
-            <button class="btn bg-white"><a href="/Activity_worksheets.pdf">Student activity worksheets</a></button>
+            <button class="btn bg-pmint"><a href="/Lesson Plans FINAL.pdf">Classroom lesson plans</a></button>
+            <button class="btn bg-white"><a href="/Activity sheets FINAL.pdf">Student activity worksheets</a></button>
           </div>
         </div>
       </div>

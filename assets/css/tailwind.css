@@ -19,7 +19,7 @@
   #app {
     background-repeat: no-repeat;
     background-image: url("/VicReturns-Desktop-NEW.jpg");
-	background-size: contain;
+	background-size: cover;
   }
 
   h1 {
