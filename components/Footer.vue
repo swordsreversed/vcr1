@@ -14,13 +14,13 @@
 				</div>
 			</div>
 			<div class="my-8 pt-8 flex items-center mr-6">
-				<div class="mr-6 w-5/6">
+				<div class="mr-6 w-2/3 md:w-5/6">
 					<img src="/CDS-Vic_Arrow_RGB.png" />
 
 				</div>
-				<div class="w-1/6 ml-2 flex justify-center">
+				<div class="w-1/3 md:w-1/6 ml-2 flex justify-center">
 					<a href="https://cdsvic.org.au/">
-						<img class="w-1/2" src="/logosb.png" />
+						<img class="md:w-1/2" src="/logosb.png" />
 					</a>
 				</div>
 			</div>
